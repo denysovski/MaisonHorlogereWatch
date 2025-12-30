@@ -17,4 +17,4 @@ Maison Horlogère is a digital showcase dedicated to fine watchmaking, designed 
 Many watch websites lean either too technical or overly decorative. Maison Horlogère sits between those extremes: informative yet atmospheric, minimal yet emotionally rich. The platform reflects the patience, mastery, and heritage behind luxury timepieces through a calm, deliberate digital presence. Whether exploring collections, appreciating details, or discovering the brand’s story, Maison Horlogère delivers an experience that feels curated, timeless, and unmistakably refined.
 
 ## Live preview
-Link to the website:
+Link to the website: https://denysovski.github.io/MaisonHorlogereWatch/
