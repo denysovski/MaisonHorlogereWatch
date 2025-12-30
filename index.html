@@ -23,6 +23,563 @@
 
   <body>
     <div id="root"></div>
+    
+    <!-- Additional Luxury Sections Injected After React Mount -->
+    <script>
+      // Wait for React to mount, then inject additional sections
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          const root = document.getElementById('root');
+          if (root && root.firstChild) {
+            const additionalSections = document.createElement('div');
+            additionalSections.innerHTML = `
+              <!-- Collections Section -->
+              <section class="py-24 lg:py-32 bg-background">
+                <div class="luxury-container">
+                  <div class="text-center mb-16 animate-fade-up">
+                    <h2 class="luxury-heading mb-6">Collections</h2>
+                    <div class="luxury-divider mb-8"></div>
+                    <p class="luxury-body max-w-2xl mx-auto">
+                      Discover our curated collections, each representing a distinct chapter in horological excellence.
+                    </p>
+                  </div>
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="group animate-fade-up animation-delay-200">
+                      <div class="aspect-square bg-ivory mb-6 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm tracking-widest">
+                          HERITAGE COLLECTION
+                        </div>
+                      </div>
+                      <h3 class="font-serif text-2xl mb-3">Heritage</h3>
+                      <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
+                        Time-honored designs reimagined for the modern connoisseur
+                      </p>
+                      <div class="text-xs text-muted-foreground space-y-1">
+                        <p>Case: 40mm Stainless Steel</p>
+                        <p>Movement: Automatic Caliber MH-01</p>
+                      </div>
+                    </div>
+                    <div class="group animate-fade-up animation-delay-400">
+                      <div class="aspect-square bg-ivory mb-6 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm tracking-widest">
+                          CONTEMPORARY
+                        </div>
+                      </div>
+                      <h3 class="font-serif text-2xl mb-3">Contemporary</h3>
+                      <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
+                        Bold statements in precision engineering and modern aesthetics
+                      </p>
+                      <div class="text-xs text-muted-foreground space-y-1">
+                        <p>Case: 42mm Titanium</p>
+                        <p>Movement: Automatic Caliber MH-02</p>
+                      </div>
+                    </div>
+                    <div class="group animate-fade-up animation-delay-600">
+                      <div class="aspect-square bg-ivory mb-6 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm tracking-widest">
+                          COMPLICATIONS
+                        </div>
+                      </div>
+                      <h3 class="font-serif text-2xl mb-3">Grand Complications</h3>
+                      <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
+                        Masterworks of mechanical complexity and artistic finishing
+                      </p>
+                      <div class="text-xs text-muted-foreground space-y-1">
+                        <p>Case: 44mm Platinum</p>
+                        <p>Movement: Manual Caliber MH-03</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- The Art of Time Section -->
+              <section class="py-24 lg:py-32 bg-ivory">
+                <div class="luxury-container">
+                  <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="luxury-heading mb-12 animate-fade-up">The Art of Time</h2>
+                    <div class="space-y-8 animate-fade-up animation-delay-200">
+                      <p class="font-serif text-xl lg:text-2xl leading-relaxed italic text-foreground/90">
+                        "Time is not merely measured—it is contemplated, crafted, and ultimately, immortalized."
+                      </p>
+                      <p class="luxury-body">
+                        Each timepiece represents a meditation on temporality itself. The steady rhythm of an escapement, 
+                        the delicate balance of a tourbillon, the silent sweep of precision-engineered hands across a dial—
+                        these are not just mechanisms, but philosophical statements about our relationship with time.
+                      </p>
+                      <p class="luxury-body">
+                        In an era of digital immediacy, we choose deliberate complexity. We choose the patient assembly 
+                        of hundreds of microscopic components. We choose finishing techniques passed down through generations. 
+                        This is watchmaking as meditation, as resistance, as art.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Materials & Details Section -->
+              <section class="py-24 lg:py-32 bg-background">
+                <div class="luxury-container">
+                  <div class="text-center mb-16">
+                    <h2 class="luxury-heading mb-6">Materials & Details</h2>
+                    <div class="luxury-divider mb-8"></div>
+                  </div>
+                  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center animate-fade-up">
+                      <div class="w-20 h-20 mx-auto mb-6 bg-ivory rounded-full flex items-center justify-center">
+                        <span class="text-2xl">◇</span>
+                      </div>
+                      <h3 class="font-serif text-lg mb-3">Sapphire Crystal</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        Anti-reflective coating on both sides. Hardness rating 9 on Mohs scale.
+                      </p>
+                    </div>
+                    <div class="text-center animate-fade-up animation-delay-200">
+                      <div class="w-20 h-20 mx-auto mb-6 bg-ivory rounded-full flex items-center justify-center">
+                        <span class="text-2xl">◈</span>
+                      </div>
+                      <h3 class="font-serif text-lg mb-3">316L Stainless Steel</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        Surgical-grade alloy with superior corrosion resistance and polished finish.
+                      </p>
+                    </div>
+                    <div class="text-center animate-fade-up animation-delay-400">
+                      <div class="w-20 h-20 mx-auto mb-6 bg-ivory rounded-full flex items-center justify-center">
+                        <span class="text-2xl">◆</span>
+                      </div>
+                      <h3 class="font-serif text-lg mb-3">Italian Leather</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        Full-grain calfskin from Tuscany. Hand-stitched with waxed thread.
+                      </p>
+                    </div>
+                    <div class="text-center animate-fade-up animation-delay-600">
+                      <div class="w-20 h-20 mx-auto mb-6 bg-ivory rounded-full flex items-center justify-center">
+                        <span class="text-2xl">◊</span>
+                      </div>
+                      <h3 class="font-serif text-lg mb-3">PVD Coating</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        Physical Vapor Deposition for lasting color and scratch resistance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Heritage & Inspiration Section -->
+              <section class="py-24 lg:py-32 bg-ivory">
+                <div class="luxury-container">
+                  <div class="max-w-4xl mx-auto">
+                    <h2 class="luxury-heading text-center mb-16">Heritage & Inspiration</h2>
+                    <div class="space-y-12">
+                      <div class="flex items-start gap-8 animate-fade-up">
+                        <div class="flex-shrink-0 w-24 text-right">
+                          <span class="font-serif text-4xl text-primary">1892</span>
+                        </div>
+                        <div class="flex-1 pt-2">
+                          <h3 class="font-serif text-xl mb-2">Foundation</h3>
+                          <p class="text-sm text-muted-foreground leading-relaxed">
+                            Established in the heart of Swiss watchmaking tradition, our maison began 
+                            with a singular vision: absolute precision without compromise.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-8 animate-fade-up animation-delay-200">
+                        <div class="flex-shrink-0 w-24 text-right">
+                          <span class="font-serif text-4xl text-primary">1920</span>
+                        </div>
+                        <div class="flex-1 pt-2">
+                          <h3 class="font-serif text-xl mb-2">Innovation</h3>
+                          <p class="text-sm text-muted-foreground leading-relaxed">
+                            Introduction of our first proprietary movement, merging classical architecture 
+                            with groundbreaking escapement design.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-8 animate-fade-up animation-delay-400">
+                        <div class="flex-shrink-0 w-24 text-right">
+                          <span class="font-serif text-4xl text-primary">1965</span>
+                        </div>
+                        <div class="flex-1 pt-2">
+                          <h3 class="font-serif text-xl mb-2">Renaissance</h3>
+                          <p class="text-sm text-muted-foreground leading-relaxed">
+                            Amidst the quartz revolution, we doubled down on mechanical excellence, 
+                            preserving centuries of artisanal knowledge.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-8 animate-fade-up animation-delay-600">
+                        <div class="flex-shrink-0 w-24 text-right">
+                          <span class="font-serif text-4xl text-primary">Today</span>
+                        </div>
+                        <div class="flex-1 pt-2">
+                          <h3 class="font-serif text-xl mb-2">Evolution</h3>
+                          <p class="text-sm text-muted-foreground leading-relaxed">
+                            Continuing our legacy through contemporary design, advanced materials, 
+                            and unwavering dedication to the watchmaker's art.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Motion & Precision Section -->
+              <section class="py-24 lg:py-32 bg-background overflow-hidden">
+                <div class="luxury-container">
+                  <div class="text-center mb-16">
+                    <h2 class="luxury-heading mb-6">Motion & Precision</h2>
+                    <div class="luxury-divider mb-8"></div>
+                    <p class="luxury-body max-w-2xl mx-auto">
+                      Every movement tells a story of obsessive refinement
+                    </p>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="text-center">
+                      <div class="text-6xl font-serif text-primary mb-4">28,800</div>
+                      <div class="text-sm uppercase tracking-widest text-muted-foreground mb-2">Vibrations per Hour</div>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        High-frequency beating ensures exceptional accuracy and smooth seconds hand motion
+                      </p>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-6xl font-serif text-primary mb-4">±2</div>
+                      <div class="text-sm uppercase tracking-widest text-muted-foreground mb-2">Seconds Daily Variance</div>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        COSC-certified chronometer precision, regulated across five positions
+                      </p>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-6xl font-serif text-primary mb-4">72h</div>
+                      <div class="text-sm uppercase tracking-widest text-muted-foreground mb-2">Power Reserve</div>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        Three full days of autonomous operation from a single winding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Limited Editions Section -->
+              <section class="py-24 lg:py-32 bg-ivory">
+                <div class="luxury-container">
+                  <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16">
+                      <h2 class="luxury-heading mb-6">Limited Editions</h2>
+                      <div class="luxury-divider mb-8"></div>
+                    </div>
+                    <div class="space-y-12">
+                      <div class="luxury-card p-8 hover:shadow-xl transition-all duration-700">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center">
+                          <div class="flex-1">
+                            <div class="text-xs uppercase tracking-widest text-primary mb-2">Limited to 99 Pieces</div>
+                            <h3 class="font-serif text-2xl lg:text-3xl mb-4">Chronographe Perpétuel</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-6">
+                              Our most complex creation: perpetual calendar with moon phase, 
+                              chronograph function, and power reserve indicator. Each piece individually numbered and certified.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-xs text-muted-foreground">
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Case</span>
+                                44mm Platinum
+                              </div>
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Movement</span>
+                                Manual MH-P01
+                              </div>
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Components</span>
+                                432 Parts
+                              </div>
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Availability</span>
+                                27/99 Remaining
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-full lg:w-64 h-64 bg-background/30 flex items-center justify-center text-xs tracking-widest text-muted-foreground">
+                            PERPETUAL<br/>CHRONOGRAPH
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="luxury-card p-8 hover:shadow-xl transition-all duration-700">
+                        <div class="flex flex-col lg:flex-row-reverse gap-8 items-center">
+                          <div class="flex-1">
+                            <div class="text-xs uppercase tracking-widest text-primary mb-2">Limited to 50 Pieces</div>
+                            <h3 class="font-serif text-2xl lg:text-3xl mb-4">Tourbillon Squelette</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-6">
+                              A transparent meditation on movement architecture. The skeletonized dial reveals 
+                              every wheel, spring, and jewel, crowned by a mesmerizing tourbillon at 6 o'clock.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-xs text-muted-foreground">
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Case</span>
+                                42mm Rose Gold
+                              </div>
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Movement</span>
+                                Manual MH-T01
+                              </div>
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Finishing</span>
+                                Geneva Stripes
+                              </div>
+                              <div>
+                                <span class="block font-medium text-foreground mb-1">Availability</span>
+                                12/50 Remaining
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-full lg:w-64 h-64 bg-background/30 flex items-center justify-center text-xs tracking-widest text-muted-foreground">
+                            TOURBILLON<br/>SKELETON
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Maison Standards Section -->
+              <section class="py-24 lg:py-32 bg-background">
+                <div class="luxury-container">
+                  <div class="text-center mb-16">
+                    <h2 class="luxury-heading mb-6">Maison Standards</h2>
+                    <div class="luxury-divider mb-8"></div>
+                    <p class="luxury-body max-w-2xl mx-auto">
+                      Our commitment to excellence, codified
+                    </p>
+                  </div>
+                  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="luxury-card p-8">
+                      <h3 class="font-serif text-xl mb-4">Quality Control</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed mb-4">
+                        Every component undergoes 73 individual inspections before assembly. 
+                        Final regulation occurs over 21 days in five positions and three temperatures.
+                      </p>
+                      <ul class="text-xs text-muted-foreground space-y-2">
+                        <li>• Microscopic finishing examination</li>
+                        <li>• Water resistance testing to 10 ATM</li>
+                        <li>• Timing verification on master chronometer</li>
+                      </ul>
+                    </div>
+                    <div class="luxury-card p-8">
+                      <h3 class="font-serif text-xl mb-4">Longevity</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed mb-4">
+                        Designed for generational ownership. All movements serviceable for minimum 100 years. 
+                        Complete parts archive maintained indefinitely.
+                      </p>
+                      <ul class="text-xs text-muted-foreground space-y-2">
+                        <li>• Lifetime movement servicing guarantee</li>
+                        <li>• Heritage restoration program</li>
+                        <li>• Certificate of authenticity & provenance</li>
+                      </ul>
+                    </div>
+                    <div class="luxury-card p-8">
+                      <h3 class="font-serif text-xl mb-4">Precision Tolerances</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed mb-4">
+                        Manufacturing to micron-level specifications. Case components machined to ±0.005mm. 
+                        Hand-polished surfaces achieve mirror finish.
+                      </p>
+                      <ul class="text-xs text-muted-foreground space-y-2">
+                        <li>• CNC machining + manual finishing</li>
+                        <li>• Perlage, anglage, Geneva stripes</li>
+                        <li>• Blue-steel screws heat-treated precisely</li>
+                      </ul>
+                    </div>
+                    <div class="luxury-card p-8">
+                      <h3 class="font-serif text-xl mb-4">Artisanal Assembly</h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed mb-4">
+                        Each timepiece assembled by a single master watchmaker. Personal signature on 
+                        movement. Minimum 7 years training required.
+                      </p>
+                      <ul class="text-xs text-muted-foreground space-y-2">
+                        <li>• Hand-assembly of 200+ components</li>
+                        <li>• Traditional Swiss techniques preserved</li>
+                        <li>• Personalized maker's mark</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Editorial Journal Section -->
+              <section class="py-24 lg:py-32 bg-ivory">
+                <div class="luxury-container">
+                  <div class="text-center mb-16">
+                    <h2 class="luxury-heading mb-6">Journal</h2>
+                    <div class="luxury-divider mb-8"></div>
+                    <p class="luxury-body max-w-2xl mx-auto">
+                      Perspectives on time, craftsmanship, and design
+                    </p>
+                  </div>
+                  <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                    <article class="group cursor-pointer">
+                      <div class="aspect-[4/3] bg-background/30 mb-6 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center text-xs tracking-widest text-muted-foreground transition-transform duration-700 group-hover:scale-105">
+                          EDITORIAL IMAGE
+                        </div>
+                      </div>
+                      <div class="text-xs uppercase tracking-widest text-primary mb-2">Culture</div>
+                      <h3 class="font-serif text-xl mb-3 group-hover:text-primary transition-colors">
+                        The Lost Art of Manual Winding
+                      </h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        Why the daily ritual of hand-winding connects us to centuries of horological tradition
+                      </p>
+                    </article>
+                    
+                    <article class="group cursor-pointer">
+                      <div class="aspect-[4/3] bg-background/30 mb-6 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center text-xs tracking-widest text-muted-foreground transition-transform duration-700 group-hover:scale-105">
+                          EDITORIAL IMAGE
+                        </div>
+                      </div>
+                      <div class="text-xs uppercase tracking-widest text-primary mb-2">Technique</div>
+                      <h3 class="font-serif text-xl mb-3 group-hover:text-primary transition-colors">
+                        Inside the Finishing Atelier
+                      </h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        A masterclass in perlage, anglage, and the subtle differences that define excellence
+                      </p>
+                    </article>
+                    
+                    <article class="group cursor-pointer">
+                      <div class="aspect-[4/3] bg-background/30 mb-6 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center text-xs tracking-widest text-muted-foreground transition-transform duration-700 group-hover:scale-105">
+                          EDITORIAL IMAGE
+                        </div>
+                      </div>
+                      <div class="text-xs uppercase tracking-widest text-primary mb-2">Design</div>
+                      <h3 class="font-serif text-xl mb-3 group-hover:text-primary transition-colors">
+                        Bauhaus Meets Watchmaking
+                      </h3>
+                      <p class="text-sm text-muted-foreground leading-relaxed">
+                        How architectural minimalism influenced our Contemporary Collection
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Visit / Contact Section -->
+              <section class="py-24 lg:py-32 bg-background">
+                <div class="luxury-container">
+                  <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="luxury-heading mb-6">Visit Our Atelier</h2>
+                    <div class="luxury-divider mb-12"></div>
+                    <p class="luxury-body mb-12">
+                      Experience our timepieces in an environment befitting their creation. 
+                      Private appointments available by arrangement.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                      <div class="text-left luxury-card p-8">
+                        <h3 class="font-serif text-lg mb-4">Geneva Flagship</h3>
+                        <div class="text-sm text-muted-foreground space-y-2">
+                          <p>12 Rue du Rhône</p>
+                          <p>1204 Geneva, Switzerland</p>
+                          <p class="pt-4">Tuesday – Saturday</p>
+                          <p>10:00 – 18:00</p>
+                        </div>
+                      </div>
+                      <div class="text-left luxury-card p-8">
+                        <h3 class="font-serif text-lg mb-4">Private Viewing</h3>
+                        <div class="text-sm text-muted-foreground space-y-2">
+                          <p>Schedule a personal consultation</p>
+                          <p>contact@maisonhorlogere.ch</p>
+                          <p class="pt-4">By Appointment Only</p>
+                          <p>+41 22 XXX XXXX</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border border-primary/20 p-8 max-w-md mx-auto">
+                      <p class="text-xs uppercase tracking-widest text-primary mb-6">Reserve Your Appointment</p>
+                      <div class="space-y-4">
+                        <input type="text" placeholder="Name" 
+                               class="w-full px-4 py-3 bg-transparent border border-border focus:border-primary outline-none text-sm transition-colors">
+                        <input type="email" placeholder="Email" 
+                               class="w-full px-4 py-3 bg-transparent border border-border focus:border-primary outline-none text-sm transition-colors">
+                        <textarea placeholder="Message" rows="3"
+                                  class="w-full px-4 py-3 bg-transparent border border-border focus:border-primary outline-none text-sm transition-colors resize-none"></textarea>
+                        <button class="w-full px-8 py-4 bg-foreground text-background hover:bg-foreground/90 transition-colors text-sm uppercase tracking-widest">
+                          Request Appointment
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Footer as Statement -->
+              <footer class="py-16 bg-charcoal text-background">
+                <div class="luxury-container">
+                  <div class="text-center space-y-8">
+                    <div>
+                      <h2 class="font-serif text-4xl mb-4 text-primary">Maison Horlogère</h2>
+                      <p class="font-serif text-sm italic text-background/70 max-w-md mx-auto">
+                        "Precision is not a destination—it is a perpetual pursuit."
+                      </p>
+                    </div>
+                    
+                    <div class="h-px w-64 mx-auto bg-background/20"></div>
+                    
+                    <div class="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto pt-8">
+                      <div>
+                        <h3 class="text-xs uppercase tracking-widest mb-4 text-primary">Collections</h3>
+                        <ul class="space-y-2 text-xs text-background/70">
+                          <li><a href="#" class="hover:text-background transition-colors">Heritage</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Contemporary</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Grand Complications</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Limited Editions</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h3 class="text-xs uppercase tracking-widest mb-4 text-primary">Maison</h3>
+                        <ul class="space-y-2 text-xs text-background/70">
+                          <li><a href="#" class="hover:text-background transition-colors">Our Philosophy</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Craftsmanship</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Heritage</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Journal</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h3 class="text-xs uppercase tracking-widest mb-4 text-primary">Services</h3>
+                        <ul class="space-y-2 text-xs text-background/70">
+                          <li><a href="#" class="hover:text-background transition-colors">Visit Atelier</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Servicing</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Authentication</a></li>
+                          <li><a href="#" class="hover:text-background transition-colors">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="h-px w-full bg-background/20 mt-12"></div>
+                    
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/50 pt-8">
+                      <div>
+                        © 2025 Maison Horlogère. All rights reserved.
+                      </div>
+                      <div class="flex gap-6">
+                        <a href="#" class="hover:text-background transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-background transition-colors">Terms</a>
+                        <a href="#" class="hover:text-background transition-colors">Legal</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            `;
+            
+            // Insert after the root's first child (the React app)
+            root.firstChild.appendChild(additionalSections);
+          }
+        }, 100);
+      });
+    </script>
+    
     <script type="module">
 var ev=Object.defineProperty;var Dc=e=>{throw TypeError(e)};var tv=(e,t,n)=>t in e?ev(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n;var Ft=(e,t,n)=>tv(e,typeof t!="symbol"?t+"":t,n),Sl=(e,t,n)=>t.has(e)||Dc("Cannot "+n);var T=(e,t,n)=>(Sl(e,t,"read from private field"),n?n.call(e):t.get(e)),Z=(e,t,n)=>t.has(e)?Dc("Cannot add the same private member more than once"):t instanceof WeakSet?t.add(e):t.set(e,n),H=(e,t,n,r)=>(Sl(e,t,"write to private field"),r?r.call(e,n):t.set(e,n),n),ke=(e,t,n)=>(Sl(e,t,"access private method"),n);var bi=(e,t,n,r)=>({set _(o){H(e,t,o,n)},get _(){return T(e,t,r)}});function nv(e,t){for(var n=0;n<t.length;n++){const r=t[n];if(typeof r!="string"&&!Array.isArray(r)){for(const o in r)if(o!=="default"&&!(o in e)){const i=Object.getOwnPropertyDescriptor(r,o);i&&Object.defineProperty(e,o,i.get?i:{enumerable:!0,get:()=>r[o]})}}}return Object.freeze(Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}))}(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))r(o);new MutationObserver(o=>{for(const i of o)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function n(o){const i={};return o.integrity&&(i.integrity=o.integrity),o.referrerPolicy&&(i.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?i.credentials="include":o.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(o){if(o.ep)return;o.ep=!0;const i=n(o);fetch(o.href,i)}})();function di(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var Vf={exports:{}},Bs={},Wf={exports:{}},Y={};/**
  * @license React
