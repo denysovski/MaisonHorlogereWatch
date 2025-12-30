@@ -45,10 +45,10 @@
                   </div>
                   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div class="group animate-fade-up animation-delay-200">
-                      <div class="aspect-square bg-ivory mb-6 overflow-hidden">
-                        <div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm tracking-widest">
-                          HERITAGE COLLECTION
-                        </div>
+                      <div class="aspect-square bg-ivory mb-6 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1587836374228-4c3c5e2a00de?w=600&h=600&fit=crop" 
+                             alt="Heritage Collection Watch" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                       </div>
                       <h3 class="font-serif text-2xl mb-3">Heritage</h3>
                       <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
@@ -60,10 +60,10 @@
                       </div>
                     </div>
                     <div class="group animate-fade-up animation-delay-400">
-                      <div class="aspect-square bg-ivory mb-6 overflow-hidden">
-                        <div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm tracking-widest">
-                          CONTEMPORARY
-                        </div>
+                      <div class="aspect-square bg-ivory mb-6 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1594534475808-b18fc4b0ec08?w=600&h=600&fit=crop" 
+                             alt="Contemporary Women's Watch" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                       </div>
                       <h3 class="font-serif text-2xl mb-3">Contemporary</h3>
                       <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
@@ -75,10 +75,10 @@
                       </div>
                     </div>
                     <div class="group animate-fade-up animation-delay-600">
-                      <div class="aspect-square bg-ivory mb-6 overflow-hidden">
-                        <div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm tracking-widest">
-                          COMPLICATIONS
-                        </div>
+                      <div class="aspect-square bg-ivory mb-6 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600&h=600&fit=crop" 
+                             alt="Grand Complications Gold Watch" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                       </div>
                       <h3 class="font-serif text-2xl mb-3">Grand Complications</h3>
                       <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
@@ -342,8 +342,12 @@
               </section>
 
               <!-- Maison Standards Section -->
-              <section class="py-24 lg:py-32 bg-background">
-                <div class="luxury-container">
+              <section class="py-24 lg:py-32 bg-background relative overflow-hidden">
+                <div class="absolute inset-0 opacity-5">
+                  <div class="absolute top-20 right-20 w-96 h-96 border border-primary rounded-full"></div>
+                  <div class="absolute bottom-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
+                </div>
+                <div class="luxury-container relative">
                   <div class="text-center mb-16">
                     <h2 class="luxury-heading mb-6">Maison Standards</h2>
                     <div class="luxury-divider mb-8"></div>
@@ -351,54 +355,76 @@
                       Our commitment to excellence, codified
                     </p>
                   </div>
-                  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div class="luxury-card p-8">
-                      <h3 class="font-serif text-xl mb-4">Quality Control</h3>
-                      <p class="text-sm text-muted-foreground leading-relaxed mb-4">
-                        Every component undergoes 73 individual inspections before assembly. 
-                        Final regulation occurs over 21 days in five positions and three temperatures.
-                      </p>
-                      <ul class="text-xs text-muted-foreground space-y-2">
-                        <li>• Microscopic finishing examination</li>
-                        <li>• Water resistance testing to 10 ATM</li>
-                        <li>• Timing verification on master chronometer</li>
-                      </ul>
+                  
+                  <!-- Featured Standard -->
+                  <div class="max-w-5xl mx-auto mb-16">
+                    <div class="relative bg-ivory p-12 lg:p-16">
+                      <div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+                      <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                          <div class="text-6xl lg:text-8xl font-serif text-primary/20 mb-4">73</div>
+                          <h3 class="font-serif text-3xl mb-6">Quality Control</h3>
+                          <p class="text-muted-foreground leading-relaxed mb-6">
+                            Every component undergoes 73 individual inspections before assembly. 
+                            Final regulation occurs over 21 days in five positions and three temperatures.
+                          </p>
+                          <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="border-l-2 border-primary pl-4">
+                              <div class="text-primary font-medium">Microscopic</div>
+                              <div class="text-xs text-muted-foreground">Finishing examination</div>
+                            </div>
+                            <div class="border-l-2 border-primary pl-4">
+                              <div class="text-primary font-medium">10 ATM</div>
+                              <div class="text-xs text-muted-foreground">Water resistance</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="h-64 lg:h-80 bg-background/20 flex items-center justify-center">
+                          <span class="text-xs tracking-widest text-muted-foreground">PRECISION TESTING</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="luxury-card p-8">
+                  </div>
+
+                  <!-- Three Column Standards -->
+                  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+                    <div class="text-center group">
+                      <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-500">
+                        <span class="text-3xl">∞</span>
+                      </div>
                       <h3 class="font-serif text-xl mb-4">Longevity</h3>
                       <p class="text-sm text-muted-foreground leading-relaxed mb-4">
-                        Designed for generational ownership. All movements serviceable for minimum 100 years. 
-                        Complete parts archive maintained indefinitely.
+                        Designed for generational ownership. All movements serviceable for minimum 100 years.
                       </p>
-                      <ul class="text-xs text-muted-foreground space-y-2">
-                        <li>• Lifetime movement servicing guarantee</li>
-                        <li>• Heritage restoration program</li>
-                        <li>• Certificate of authenticity & provenance</li>
-                      </ul>
+                      <div class="inline-block border border-primary/30 px-4 py-2 text-xs text-primary">
+                        LIFETIME GUARANTEE
+                      </div>
                     </div>
-                    <div class="luxury-card p-8">
+                    
+                    <div class="text-center group">
+                      <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-500">
+                        <span class="text-3xl">◈</span>
+                      </div>
                       <h3 class="font-serif text-xl mb-4">Precision Tolerances</h3>
                       <p class="text-sm text-muted-foreground leading-relaxed mb-4">
-                        Manufacturing to micron-level specifications. Case components machined to ±0.005mm. 
-                        Hand-polished surfaces achieve mirror finish.
+                        Manufacturing to micron-level specifications. ±0.005mm case machining accuracy.
                       </p>
-                      <ul class="text-xs text-muted-foreground space-y-2">
-                        <li>• CNC machining + manual finishing</li>
-                        <li>• Perlage, anglage, Geneva stripes</li>
-                        <li>• Blue-steel screws heat-treated precisely</li>
-                      </ul>
+                      <div class="inline-block border border-primary/30 px-4 py-2 text-xs text-primary">
+                        SWISS CRAFTED
+                      </div>
                     </div>
-                    <div class="luxury-card p-8">
+                    
+                    <div class="text-center group">
+                      <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-500">
+                        <span class="text-3xl">✦</span>
+                      </div>
                       <h3 class="font-serif text-xl mb-4">Artisanal Assembly</h3>
                       <p class="text-sm text-muted-foreground leading-relaxed mb-4">
-                        Each timepiece assembled by a single master watchmaker. Personal signature on 
-                        movement. Minimum 7 years training required.
+                        Each timepiece assembled by a single master watchmaker with 7+ years training.
                       </p>
-                      <ul class="text-xs text-muted-foreground space-y-2">
-                        <li>• Hand-assembly of 200+ components</li>
-                        <li>• Traditional Swiss techniques preserved</li>
-                        <li>• Personalized maker's mark</li>
-                      </ul>
+                      <div class="inline-block border border-primary/30 px-4 py-2 text-xs text-primary">
+                        MASTER CRAFTED
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -493,15 +519,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="border border-primary/20 p-8 max-w-md mx-auto">
-                      <p class="text-xs uppercase tracking-widest text-primary mb-6">Reserve Your Appointment</p>
+                    <div class="bg-ivory border-t border-primary/20 p-8 max-w-md mx-auto">
+                      <p class="text-xs uppercase tracking-widest text-primary mb-6 text-center">Reserve Your Appointment</p>
                       <div class="space-y-4">
                         <input type="text" placeholder="Name" 
-                               class="w-full px-4 py-3 bg-transparent border border-border focus:border-primary outline-none text-sm transition-colors">
+                               class="w-full px-4 py-3 bg-background border border-border/50 focus:border-primary focus:outline-none text-sm transition-colors">
                         <input type="email" placeholder="Email" 
-                               class="w-full px-4 py-3 bg-transparent border border-border focus:border-primary outline-none text-sm transition-colors">
+                               class="w-full px-4 py-3 bg-background border border-border/50 focus:border-primary focus:outline-none text-sm transition-colors">
                         <textarea placeholder="Message" rows="3"
-                                  class="w-full px-4 py-3 bg-transparent border border-border focus:border-primary outline-none text-sm transition-colors resize-none"></textarea>
+                                  class="w-full px-4 py-3 bg-background border border-border/50 focus:border-primary focus:outline-none text-sm transition-colors resize-none"></textarea>
                         <button class="w-full px-8 py-4 bg-foreground text-background hover:bg-foreground/90 transition-colors text-sm uppercase tracking-widest">
                           Request Appointment
                         </button>
@@ -527,45 +553,45 @@
                     <div class="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto pt-8">
                       <div>
                         <h3 class="text-xs uppercase tracking-widest mb-4 text-primary">Collections</h3>
-                        <ul class="space-y-2 text-xs text-background/70">
-                          <li><a href="#" class="hover:text-background transition-colors">Heritage</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Contemporary</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Grand Complications</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Limited Editions</a></li>
+                        <ul class="space-y-2 text-xs text-background/60">
+                          <li><a href="#" class="hover:text-primary transition-colors">Heritage</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Contemporary</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Grand Complications</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Limited Editions</a></li>
                         </ul>
                       </div>
                       
                       <div>
                         <h3 class="text-xs uppercase tracking-widest mb-4 text-primary">Maison</h3>
-                        <ul class="space-y-2 text-xs text-background/70">
-                          <li><a href="#" class="hover:text-background transition-colors">Our Philosophy</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Craftsmanship</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Heritage</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Journal</a></li>
+                        <ul class="space-y-2 text-xs text-background/60">
+                          <li><a href="#" class="hover:text-primary transition-colors">Our Philosophy</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Craftsmanship</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Heritage</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Journal</a></li>
                         </ul>
                       </div>
                       
                       <div>
                         <h3 class="text-xs uppercase tracking-widest mb-4 text-primary">Services</h3>
-                        <ul class="space-y-2 text-xs text-background/70">
-                          <li><a href="#" class="hover:text-background transition-colors">Visit Atelier</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Servicing</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Authentication</a></li>
-                          <li><a href="#" class="hover:text-background transition-colors">Contact</a></li>
+                        <ul class="space-y-2 text-xs text-background/60">
+                          <li><a href="#" class="hover:text-primary transition-colors">Visit Atelier</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Servicing</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Authentication</a></li>
+                          <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
                         </ul>
                       </div>
                     </div>
                     
                     <div class="h-px w-full bg-background/20 mt-12"></div>
                     
-                    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/50 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/40 pt-8">
                       <div>
                         © 2025 Maison Horlogère. All rights reserved.
                       </div>
                       <div class="flex gap-6">
-                        <a href="#" class="hover:text-background transition-colors">Privacy</a>
-                        <a href="#" class="hover:text-background transition-colors">Terms</a>
-                        <a href="#" class="hover:text-background transition-colors">Legal</a>
+                        <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-primary transition-colors">Terms</a>
+                        <a href="#" class="hover:text-primary transition-colors">Legal</a>
                       </div>
                     </div>
                   </div>
