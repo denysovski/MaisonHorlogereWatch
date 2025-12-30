@@ -26,11 +26,11 @@
     
     <!-- Additional Luxury Sections Injected After React Mount -->
     <script>
-      // Wait for React to mount, then inject additional sections
+      // Wait for React to mount, then inject additional sections AFTER existing content
       window.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
           const root = document.getElementById('root');
-          if (root && root.firstChild) {
+          if (root) {
             const additionalSections = document.createElement('div');
             additionalSections.innerHTML = `
               <!-- Collections Section -->
@@ -573,8 +573,8 @@
               </footer>
             `;
             
-            // Insert after the root's first child (the React app)
-            root.firstChild.appendChild(additionalSections);
+            // Append AFTER all React content
+            root.appendChild(additionalSections);
           }
         }, 100);
       });
