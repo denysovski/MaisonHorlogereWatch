@@ -1,73 +1,20 @@
-# Welcome to your Lovable project
+# Maison Horlogère
+Maison Horlogère is a digital showcase dedicated to fine watchmaking, designed to translate the precision, heritage, and artistry of haute horlogerie into a refined online experience. Built as a front-end–focused website, the platform emphasizes craftsmanship, detail, and restraint—allowing the watches themselves to command attention. Every interaction is intentional, mirroring the confidence and timeless elegance of luxury timepieces.
 
-## Project info
+## What it does
+- Sophisticated brand presentation: Showcase Maison Horlogère’s philosophy, collections, and horological values with clarity and quiet confidence.
+- Precision-driven visual storytelling: Highlight watch details, materials, and mechanisms through structured layouts, controlled motion, and balanced typography.
+- Seamless, responsive experience: A lightweight, modern front end optimized for smooth navigation, fast performance, and fluid transitions across devices.
+- Timeless visual language: Deep tones, refined contrasts, subtle lighting, and meticulous spacing evoke the world of traditional watchmaking with a contemporary edge.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Build timeline
+- Front-End Development: Built using Vite, TypeScript, and React, enabling a fast, scalable, and maintainable architecture tailored for luxury product presentation.
+- Design System & Styling: Implemented with shadcn-ui and Tailwind CSS, ensuring consistent components, precise spacing, and a clean, refined visual hierarchy.
+- Vibe Coding with GitHub Copilot: Copilot was used to accelerate layout logic, interaction flow, and clean component implementation while preserving design intent.
+- Horology-Inspired Visual Direction: Design decisions were guided by principles of precision, balance, and restraint—echoing the discipline of fine watchmaking.
 
-## How can I edit this code?
+## Platform vision
+Many watch websites lean either too technical or overly decorative. Maison Horlogère sits between those extremes: informative yet atmospheric, minimal yet emotionally rich. The platform reflects the patience, mastery, and heritage behind luxury timepieces through a calm, deliberate digital presence. Whether exploring collections, appreciating details, or discovering the brand’s story, Maison Horlogère delivers an experience that feels curated, timeless, and unmistakably refined.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Live preview
+Link to the website:
