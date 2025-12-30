@@ -18,3 +18,5 @@ Many watch websites lean either too technical or overly decorative. Maison Horlo
 
 ## Live preview
 Link to the website: https://denysovski.github.io/MaisonHorlogereWatch/
+
+<img alt="screencapture-denysovski-github-io-MaisonHorlogereWatch-2025-12-30-19_51_13" src="https://github.com/user-attachments/assets/cae8723d-acbe-4903-bff2-04159dff841b" />
